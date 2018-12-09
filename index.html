@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>RWD. Flex. Grid</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                        <h3>Responsive Web Design</h3>
+                            <aside class="notes">
+                                Today we talk about responsive web Design
+                                and look at few questions:
+                                <br />
+                                ...
+                                <br />
+                                What does responsive mean?
+                                <br />
+                                ...
+                                <br />
+                                How should we use it?
+                                ...
+                                <br />
+                                Why should we use it?
+                                <br />
+                                Here we go
+                            </aside>
+                        <ul>
+                            <div class="fragment fade-in" data-fragment-index="0">
+                                <li>What?</li>
+                            </div>
+                            <div class="fragment fade-in" data-fragment-index="1">
+                                <li>How?</li>	
+                            </div>
+                            <div class="fragment fade-in" data-fragment-index="2">
+                                <li>Why?</li>	
+                            </div>
+                        </ul>
+                </section>
+                <section>
+                    <section>
+                        What is Responsive?
+                        <aside class="notes">
+                            so, what is responsive?
+                        </aside>
+                    </section>
+                    <section>
+                            <span class="main-word">Responsive</span> web design <i>(RWD)</i>  <br /> 
+                            is an <span class="describe-word">approach</span>
+                            <aside class="notes">
+                                an approach in which websites creates with 
+                                the instention to easy viewing with minimum resizes 
+                                and excess scrolling for big quantity of devices
+                            </aside>
+                    </section>
+                    <section>
+                        What about <span class="main-word">Adaptive</span> web design <i>(AWD)</i>?
+                        <aside class="notes">
+                            alright, it is also approach, in which
+                            provides best viewing in preset devices and resolutions
+                        </aside>
+                    </section>
+                    <section>
+                        Here we can see the difference. <i>RWD</i> at top of gif
+                        and <i>AWD</i> at bottom <br />
+                        <img class="block-image"
+                        src="img/RWDvsAWD.gif"
+                        alt="RWD vs AWD gif"
+                        width="50%" /> <br />
+                        <aside class="notes">
+                            Let's take a look. the first line like a "fluid",
+                            response for screen width. The second line
+                            mean that when you design website, you make few
+                            main resoluions, to which your design will adapt
+                        </aside>
+                    </section>
+                    <section>
+                            Or look down there...
+                            <img src="img/RWDvsAWD2.png" alt="RWD vs AWD">
+                            <aside class="notes">Or here</aside>
+                    </section>
+                    <section>
+                        Or here
+                        <img src="img/RWDvsAWD3.gif" alt="RWD vs AWD">
+                    </section>
+                    <section>
+                        Which one is better? At least for now we can't say
+                        <aside class="notes">
+                            Now we can't say which approach is better
+                            Each have own advantages and disadvantages 
+                        </aside>
+                        <div class="fragment">
+                            <img src="img/bastard.png" alt="guy with watches">
+                        </div>
+                    </section>
+                </section>
+                <section>
+                    How we can do responsive?
+                </section>
+                <section>
+                    <section>
+                        Relative Units
+                    </section>
+                    <section>
+                        Use relative. Simple use it.
+                        <img src="img/relative.gif" alt="relative units gif">
+                        <aside class="notes">
+                            Instead of static units we can use relative,
+                            which relate at screen size, and help us 
+                            hold all content at users screen
+                        </aside>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        Nested object
+                    </section>
+                    <section>
+                        For non-resizing elements use wrapper
+                        <img src="img/nested.gif" alt="nested/not nested object gif">
+                        <aside class="notes">
+                            If you had a lot of relative elements, 
+                            it would be hard to control positions of
+                            them all. Use wrapper, to make it easer
+                        </aside>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        Maximun And Minimum
+                    </section>
+                    <section>
+                        Use it. Just use it! Dont let your dreams be dreams
+                        <img src="img/maxmin.gif" alt="max min gif">
+                        <aside class="notes">
+                            Its really cool, when content take all width of your device.
+                            But only on smartphanes. What you will see, if open site like this
+                            an 55 inc TV?
+                        </aside>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        Breackpoints
+                    </section>
+                    <section>
+                        Use it! What are you wating for?
+                        <img src="img/breackpoints.gif" alt=" breackpoints gif">
+                        <aside class="notes">
+                            Breackpoints help change positions of
+                            elements in case of user width. Here at 
+                            the desktop we have two columns, and at 
+                            mobile only one
+                        </aside>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        What about content?
+                    </section>
+                    <section>
+                        <div data-markdown>
+                                Icons by fonts, such as [Font Awesome](https://fontawesome.com/)
+                        </div>
+                        <aside class="notes">
+                            we can use font-icons instead of picture-icons
+                            because we can use font-size, font-color ,etc
+                        </aside>
+                    </section>
+                    <section>
+                        But...
+                        <img src="img/fonts.gif" alt="fonts load">
+                        <aside class="notes">
+                            but we must remember about downloading
+                        </aside>
+                    </section>
+                    <section>
+                        ...And images
+                        <img src="img/svg.gif" alt="vector gif">
+                        <aside class="notes">
+                            because of size changes, images can loose 
+                            them quality, and to avoid it, better way to use 
+                            vector images, such as svg. But you must remember,
+                            that vector images has more weight
+                        </aside>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                            <blockquote>
+                                    Mobile-first, or not-mobile-first?
+                                    <div class="hamlet">Cyber-Hamlet</div>
+                            </blockquote>
+                    </section>
+                    <section>
+                        There is two ways
+                        <img src="img/desktop-mobile.gif" alt="desctop or mobile-first">
+                        <aside class="notes">
+                            there is two different ways to make RWD or AWD.
+                            Desktop-first and mobile-first.
+                            There is no difference, how to start,
+                            but we must understand, than user from mobile usually
+                            has less internet connection speed, then pc-user, 
+                            and can be underground, or in air...
+                        </aside>
+                    </section>
+                    <section>
+                        <div> Choose carefuly</div>
+                        <img src="img/mob-pc.jpg" alt="hm...">
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        Why should use?
+                    </section>
+                    <section>
+                        <h1>BECAUSE</h1>
+                        presentation is over, thnx all
+                        <div class="fragment">
+                            just joking
+                        </div>
+                    </section>
+                    <section>
+                        To make a long story short - now mobile devices are even more popular
+                        in intenet, than PC
+                    </section>
+                    <section>
+                        Here some digits and graphics
+                    </section>
+                    <section>
+                        <div> Blah-blah...</div>
+                        <img src="img/blah-1.jpg" height="400px" class="blah" alt="blah">
+                    </section>
+                    <section>
+                        <div> ...blah-blah-blah...</div>
+                        <img src="img/blah-2.jpg" height="400px" class="blah" alt="blah-blah">
+                    </section>
+                    <section>
+                        <div>Who cares?</div>
+                        <img src="img/blah-3.jpg" height="400px" class="blah" alt="blah-blah-blah">
+                    </section>
+                </section>
+                <section>
+                    <h3>Flexbox</h3>
+                    <aside class="notes">
+                        Flexbox is a property set, which created to help
+                        developers to position elements, and solve some old problems
+                    </aside>
+                </section>
+                <section>
+                    <section>
+                        Flexbox has two axes, container, elements
+                        <img src="/img/box-model.png" alt="flex-model">
+                        <aside class="notes">
+                                Flexbox has two axes, main and cross,
+                                also has container and elements
+                            </aside>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        Container properties
+                    </section>
+                    <section>
+                        <h5>display</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.flex-container {
+    display: -webkit-flex; 
+    display: flex;
+}
+// Or
+.flex-container {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+}
+                            </code>
+                        </pre>
+                        <aside class="notes">
+                            to use flexbox model we must set 'flex'
+                            or 'inline-flex' property to container;
+                            after that each child element become flex 
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>justify-content</h5>
+                        <img src="img/justify-content.png" alt="justify-content">
+                        <aside class="notes">
+                            justify-content property alignin content
+                            via main axis
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>align-items</h5>
+                        <img src="img/align-items.png" alt="align-items">
+                        <aside class="notes">
+                            align-items property alignin content
+                            via cross axis
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>flex-direction</h5>
+                        <img src="img/flex-direction.png" alt="flex-direction">
+                        <aside class="notes">
+                            flex-direction set direction of
+                            main axis
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>flex-wrap</h5>
+                        <img src="img/flex-wrap.png" alt="flex-wrap">
+                        <aside class="notes">
+                            flex-wrap set line breacks of
+                            container
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>flex-flow</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.flex-container {
+    display: -webkit-flex; 
+    -webkit-flex-flow: row wrap; 
+    display: flex;
+    flex-flow: row wrap;
+}
+                            </code>
+                        </pre>
+                        <aside class="notes">
+                            flex-flow set direction of
+                            main axis and wrap at the same time
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>align-content</h5>
+                        <img src="img/align-content.png" alt="align-content">
+                        <aside class="notes">
+                            align-content can alignt lines
+                            works only when flex-direction
+                            and flex-wrap set;
+                        </aside>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        Element properties
+                    </section>
+                    <section>
+                        <h5>order</h5>
+                        <img src="img/order.png" alt="order">
+                        <aside class="notes">
+                            set order of viewing elements,
+                            zero by default
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>flex-basis</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+}
+.flex-item {
+    -webkit-flex-basis: 100px; 
+    flex-basis: 100px;
+}
+                            </code>
+                        </pre>
+                        <aside class="notes">
+                            set default width of element,
+                            which need to use flex-shrink nad flex-grow
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>flex-grow / flex-shrink</h5>
+                        <img src="img/flex-grow.png" alt="grow">
+                        <img src="img/flex-shrink.png" alt="shrink">
+                        <aside class="notes">
+                            set how elements changing 
+                            responsive by other elementswork only with flex-basis
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>flex</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    }
+    .flex-item {
+    -webkit-flex: 3 1 100px; 
+    -ms-flex:  3 1 100px; 
+    flex:  3 1 100px;
+}
+                            </code>
+                        </pre>
+                        <aside class="notes">
+                            shortly set grow, shrink and basis
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>align-self</h5>
+                        <img src="img/align-self.png" alt="align-self">
+                        <aside class="notes">
+                            set self elements align via 
+                            cross axis
+                        </aside>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        Useful links
+                    </section>
+                    <section>
+                        <div data-markdown>
+                            REALLY cool [game](https://flexboxfroggy.com/) to learn flexbox
+                        </div>
+                        <iframe src="https://flexboxfroggy.com/" frameborder="0"></iframe>
+                    </section>
+                    <section>
+                        <div data-markdown>
+                            Site, where you can [try](https://flexbox.help/) every properties
+                        </div>
+                        <iframe src="https://flexbox.help/" frameborder="0"></iframe>
+                    </section>
+                </section>
+                <section>
+                    Grid Layout
+                </section>
+                <section>
+                    <section>
+                        <span class="main-word">Grid</span> layout is 
+                        <span class="describe-word">two-dimensional</span>
+                        grid-based layout
+                    </section>
+                    <section>
+                        Main therms
+                    </section>
+                    <section>
+                        <img src="img/grid-main.jpg" alt="grid">
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        Container properties
+                    </section>
+                    <section>
+                            <h5>display</h5>
+                            <pre class="xml">
+                                <code class="hljs css">
+.container {
+    display: grid | inline-grid;
+}
+                                </code>
+                            </pre>
+                            <aside class="notes">
+                                Defines the element as a grid container and 
+                                establishes a new grid formatting context for its contents.
+                            </aside>
+                    </section>
+                    <section>
+                            <h5>grid-template-columns / grid-tamplate-rows</h5>
+                            <pre class="xml">
+                                <code class="hljs css">
+.container {
+    grid-template-columns: 40px 50px auto 50px 40px;
+    grid-template-rows: 25% 100px auto;
+}
+                                </code>
+                            </pre>
+                            <div class="pic-back">
+                                <img src="img/grid-numbers.png" alt="numbers">
+                            </div>
+                            <aside class="notes">
+                                    Defines the columns and rows of the grid with a space-separated 
+                                    list of values. The values represent the track size, and the 
+                                    space between them represents the grid line.
+                            </aside>
+                    </section>
+                    <section>
+                            <h5>Can use line names</h5>
+                            <pre class="xml">
+                                <code class="hljs css">
+.container {
+    grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
+    grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+}
+                                </code>
+                            </pre>
+                            <div class="pic-back">
+                                <img src="img/grid-names.png" alt="names">
+                            </div>
+                            <aside class="notes">
+                                    Note the bracket syntax for the line names
+                            </aside>
+                    </section>
+                    <section>
+                        <h5>Names and repeat</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.container1 {
+    grid-template-rows: [row1-start] 25% [row1-end row2-start] 25% [row2-end];
+}
+.container2 {
+    grid-template-columns: repeat(3, 20px [col-start]);
+}
+                            </code>
+                        </pre>
+                        <aside class="notes">
+                                you can add two names to one line
+                                and use repeat to shortcut. first argument is
+                                count of repeated element, second is size (can be width names)
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>fr</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.container {
+    grid-template-columns: 1fr 50px 1fr 1fr;
+}
+                            </code>
+                        </pre>
+                        1fr = ((width of container) - (other measures)) / fr count
+                        <aside class="notes">
+                            you can also use new fr size
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>Grid areas</h5>
+                            <pre class="xml">
+                                <code class="hljs css">
+.container {
+    grid-template-areas: 
+    "<grid-area-name> | . | none | ..."
+    "...";
+}
+                                </code>
+                            </pre>
+                            <aside class="notes">
+                                Defines a grid template by names
+                            </aside>
+                    </section>
+                    <section>
+                        <h5>Example</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.item-a {
+    grid-area: header;
+}
+.item-b {
+    grid-area: main;
+}
+.item-c {
+    grid-area: sidebar;
+}
+.item-d {
+    grid-area: footer;
+}
+
+.container {
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+}
+                            </code>
+                        </pre>
+                    </section>
+                    <section>
+                        <div class="pic-back">
+                            <img src="img/grid-template-areas.png" alt="areas">
+                        </div>
+                    </section>
+                    <section>
+                        <h5>grid-template</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.container {
+    grid-template:
+    [row1-start] "header header header" 25px [row1-end]
+    [row2-start] "footer footer footer" 25px [row2-end]
+    / auto 50px auto;
+}
+                            </code>
+                        </pre>
+                        That's equivalent to this:
+                        <pre class="xml">
+                            <code class="hljs css">
+.container {
+    grid-template-rows: [row1-start] 25px [row1-end row2-start] 25px [row2-end];
+    grid-template-columns: auto 50px auto;
+    grid-template-areas: 
+    "header header header" 
+    "footer footer footer";
+}
+                            </code>
+                        </pre>
+                        <aside class="notes">
+                                A shorthand for setting grid-template-rows,
+                                grid-template-columns, and grid-template-areas
+                                in a single declaration.
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>grid-column-gap / grid-row-gap</h5>
+                            <pre class="xml">
+                                <code class="hljs css">
+.container {
+    grid-template-columns: 100px 50px 100px;
+    grid-template-rows: 80px auto 80px; 
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+}
+                                </code>
+                            </pre>
+                            <div class="pic-back">
+                                <img src="img/grid-column-row-gap.png" alt="gaps">
+                            </div>
+                            <aside class="notes">
+                                Specifies the size of the grid lines.
+                            </aside>
+                    </section>
+                    <section>
+                        <h5>grid-gap</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.container {
+    grid-template-columns: 100px 50px 100px;
+    grid-template-rows: 80px auto 80px; 
+    grid-gap: 15px 10px;
+}
+                            </code>
+                        </pre>
+                        <aside class="notes">
+                            Shorhand for both
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>justify-items</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.container {
+    justify-items: start | end | center | stretch;
+}
+                            </code>
+                        </pre>
+                        <aside class="notes">
+                            Aligns grid items along the inline (row) axis
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>start</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.container {
+    justify-items: start;
+}
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                            <img src="img/grid-justify-items-start.png" alt="start">
+                        </div>
+                        <aside class="notes">
+                            at start
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>end</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.container {
+    justify-items: end;
+}
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                            <img src="img/grid-justify-items-end.png" alt="end">
+                        </div>
+                        <aside class="notes">
+                            at end
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>center</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.container {
+    justify-items: center;
+}
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                            <img src="img/grid-justify-items-center.png" alt="center">
+                        </div>
+                        <aside class="notes">
+                            at enter
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>stretch</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.container {
+    justify-items: stretch;
+}
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                            <img src="img/grid-justify-items-stretch.png" alt="stertch">
+                        </div>
+                        <aside class="notes">
+                            set stretch
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>align-items</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.container {
+    align-items: start | end | center | stretch;
+}
+                            </code>
+                        </pre>
+                        <aside class="notes">
+                            Aligns grid items along the block (column) axis
+                            has the same values
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>start</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.container {
+    align-items: start;
+}
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                            <img src="img/grid-align-items-start.png" alt="start">
+                        </div>
+                        <aside class="notes">
+                            at start
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>end</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.container {
+    align-items: end;
+}
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                            <img src="img/grid-align-items-end.png" alt="end">
+                        </div>
+                        <aside class="notes">
+                            at end
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>center</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.container {
+    align-items: center;
+}
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                            <img src="img/grid-align-items-center.png" alt="center">
+                        </div>
+                        <aside class="notes">
+                            at enter
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>stretch</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.container {
+    align-items: stretch;
+}
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                            <img src="img/grid-align-items-stretch.png" alt="stertch">
+                        </div>
+                        <aside class="notes">
+                            set stretch
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>place-items</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.container {
+    place-items: stretch / center;
+}
+                            </code>
+                        </pre>
+                        align-items / justify-items
+                        <aside class="notes">
+                                place-items sets both the align-items 
+                                and justify-items properties in a single 
+                                declaration.
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>justify-content</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.container {
+    justify-content: start | end | center | stretch;
+}
+                            </code>
+                        </pre>
+                        <aside class="notes">
+                                you can set the alignment of the grid within the grid container.
+                                This property aligns the grid along the inline (row) axis
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>start</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.container {
+    justify-content: start;
+}
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                            <img src="img/grid-justify-content-start.png" alt="start">
+                        </div>
+                        <aside class="notes">
+                            at start
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>end</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.container {
+    justify-content: end;
+}
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                            <img src="img/grid-justify-content-end.png" alt="end">
+                        </div>
+                        <aside class="notes">
+                            at end
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>center</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.container {
+    justify-content: center;
+}
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                            <img src="img/grid-justify-content-center.png" alt="center">
+                        </div>
+                        <aside class="notes">
+                            at enter
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>stretch</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.container {
+    justify-content: stretch;
+}
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                            <img src="img/grid-justify-content-stretch.png" alt="stertch">
+                        </div>
+                        <aside class="notes">
+                            set stretch
+                        </aside>
+                    </section>
+                    <section>
+                            <h5>space-around</h5>
+                            <pre class="xml">
+                                <code class="hljs css">
+.container {
+    justify-content: space-around;
+}
+                                </code>
+                            </pre>
+                            <div class="pic-back">
+                                <img src="img/grid-justify-content-space-around.png" alt="end">
+                            </div>
+                            <aside class="notes">
+                                    space-around
+                            </aside>
+                    </section>
+                    <section>
+                        <h5>space-between</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.container {
+    justify-content: space-between;
+}
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                            <img src="img/grid-justify-content-space-between.png" alt="center">
+                        </div>
+                        <aside class="notes">
+                                space-between
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>space-evenly</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.container {
+    justify-content: space-evenly;
+}
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                            <img src="img/grid-justify-content-space-evenly.png" alt="stertch">
+                        </div>
+                        <aside class="notes">
+                                space-evenly
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>align-content</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.container {
+    align-content: start | end | center | stretch;
+}
+                            </code>
+                        </pre>
+                        <aside class="notes">
+                                This property aligns the grid 
+                                along the block (column) axis
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>start</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.container {
+    align-content: start;
+}
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                            <img src="img/grid-align-content-start.png" alt="start">
+                        </div>
+                        <aside class="notes">
+                            at start
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>end</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.container {
+    align-content: end;
+}
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                            <img src="img/grid-align-content-end.png" alt="end">
+                        </div>
+                        <aside class="notes">
+                            at end
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>center</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.container {
+    align-content: center;
+}
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                            <img src="img/grid-align-content-center.png" alt="center">
+                        </div>
+                        <aside class="notes">
+                            at enter
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>stretch</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.container {
+    align-content: stretch;
+}
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                            <img src="img/grid-align-content-stretch.png" alt="stertch">
+                        </div>
+                        <aside class="notes">
+                            set stretch
+                        </aside>
+                    </section>
+                    <section>
+                            <h5>space-around</h5>
+                            <pre class="xml">
+                                <code class="hljs css">
+.container {
+    align-content: space-around;
+}
+                                </code>
+                            </pre>
+                            <div class="pic-back">
+                                <img src="img/grid-align-content-space-around.png" alt="end">
+                            </div>
+                            <aside class="notes">
+                                    space-around
+                            </aside>
+                    </section>
+                    <section>
+                        <h5>space-between</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.container {
+    align-content: space-between;
+}
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                            <img src="img/grid-align-content-space-between.png" alt="center">
+                        </div>
+                        <aside class="notes">
+                                space-between
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>space-evenly</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.container {
+    align-content: space-evenly;
+}
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                            <img src="img/grid-align-content-space-evenly.png" alt="stertch">
+                        </div>
+                        <aside class="notes">
+                                space-evenly
+                        </aside>
+                    </section>
+                    <section>
+                        <h5>place-content</h5>
+                        <pre class="xml">
+                            <code class="hljs css">
+.container {
+    place-content: stretch / center;
+}
+                            </code>
+                        </pre>
+                        align-content / justify-content
+                        <aside class="notes">
+                                place-items sets both the align-content 
+                                and justify-content properties in a single 
+                                declaration.
+                        </aside>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        Element properties
+                    </section>
+                    <section>
+                        float, display: inline-block, 
+                        display: table-cell, vertical-align and 
+                        column-* properties have no effect on a grid item.
+                    </section>
+                    <section>
+                        <h5>
+                            grid-column-start <br>
+                            grid-column-end <br>
+                            grid-row-start <br>
+                            grid-row-end <br>
+                        </h5>
+                        <aside class="notes">
+                            Determines a grid item's 
+                            location within the grid
+                        </aside>
+                    </section>
+                    <section>
+                        Example
+                        <pre class="xml">
+                            <code class="hljs css">
+    .item-a {
+        grid-column-start: 2;
+        grid-column-end: five;
+        grid-row-start: row1-start;
+        grid-row-end: 3;
+    }
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                            <img src="img/grid-column-row-start-end-01.svg" width="400px" alt="end">
+                        </div>
+                    </section>
+                    <section>
+                        <pre class="xml">
+                            <code class="hljs css">
+    .item-b {
+        grid-column-start: 1;
+        grid-column-end: span col4-start;
+        grid-row-start: 2;
+        grid-row-end: span 2;
+    }
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                            <img src="img/grid-column-row-start-end-02.svg" width="400px" alt="end">
+                        </div>
+                    </section>
+                    <section>
+                        <h5>
+                            grid-column <br>
+                            grid-row
+                        </h5>
+                        <aside class="notes">
+                            Shorthand for grid-column-start
+                            + grid-column-end, and
+                            grid-row-start + grid-row-end
+                        </aside>
+                    </section>
+                    <section>
+                        Example
+                        <pre class="xml">
+                            <code class="hljs css">
+    .item-c {
+        grid-column: 3 / span 2;
+        grid-row: third-line / 4;
+    }
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                            <img src="img/grid-column-row.svg" width="400px" alt="end">
+                        </div>
+                    </section>
+                    <section>
+                        <h5>
+                            grid-area
+                        </h5>
+                        <aside class="notes">
+                            Gives an item a name so that 
+                            it can be referenced by a template 
+                            created with the grid-template-areas property.
+                        </aside>
+                    </section>
+                    <section>
+                        Example
+                        <pre class="xml">
+                            <code class="hljs css">
+    .item-a {
+        grid-area: header;
+    }
+        .item-b {
+        grid-area: main;
+    }
+        .item-c {
+        grid-area: sidebar;
+    }
+        .item-d {
+        grid-area: footer;
+    }
+                            </code>
+                        </pre>
+                    </section>
+                    <section>
+                        <pre class="xml">
+                            <code class="hljs css">
+    .container {
+        grid-template-columns: 50px 50px 50px 50px;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "header header header header"
+            "main main . sidebar"
+            "footer footer footer footer";
+    }
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                                <img src="img/dddgrid-template-areas.svg" width="300px" alt="end">
+                            </div>
+                    </section>
+                    <section>
+                        <h5>
+                            justify-self
+                        </h5>
+                        <aside class="notes">
+                            Aligns a grid item inside a 
+                            cell along the inline (row) axis
+                        </aside>
+                    </section>
+                    <section>
+                        Example
+                        <pre class="xml">
+                            <code class="hljs css">
+.item-a {
+    justify-self: start;
+}
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                                <img src="img/justify-self-start.svg" width="400px" alt="end">
+                        </div>
+                    </section>
+                    <section>
+                        <pre class="xml">
+                            <code class="hljs css">
+.item-a {
+    justify-self: end;
+}
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                                <img src="img/justify-self-end.svg" width="400px" alt="end">
+                        </div>
+                    </section>
+                    <section>
+                        <pre class="xml">
+                            <code class="hljs css">
+.item-a {
+    justify-self: center;
+}
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                                <img src="img/justify-self-center.svg" width="400px" alt="end">
+                        </div>
+                    </section>
+                    <section>
+                        <pre class="xml">
+                            <code class="hljs css">
+.item-a {
+    justify-self: stretch;
+}
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                                <img src="img/justify-self-stretch.svg" width="400px" alt="end">
+                        </div>
+                    </section>
+                    <section>
+                        <h5>
+                            align-self
+                        </h5>
+                        <aside class="notes">
+                            Aligns a grid item inside a 
+                            cell along the block (column) axis
+                        </aside>
+                    </section>
+                    <section>
+                        Example
+                        <pre class="xml">
+                            <code class="hljs css">
+.item-a {
+    align-self: start;
+}
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                                <img src="img/align-self-start.svg" width="400px" alt="end">
+                        </div>
+                    </section>
+                    <section>
+                        <pre class="xml">
+                            <code class="hljs css">
+.item-a {
+    align-self: end;
+}
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                                <img src="img/align-self-end.svg" width="400px" alt="end">
+                        </div>
+                    </section>
+                    <section>
+                        <pre class="xml">
+                            <code class="hljs css">
+.item-a {
+    align-self: center;
+}
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                                <img src="img/align-self-center.svg" width="400px" alt="end">
+                        </div>
+                    </section>
+                    <section>
+                        <pre class="xml">
+                            <code class="hljs css">
+.item-a {
+    align-self: stretch;
+}
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                                <img src="img/align-self-stretch.svg" width="400px" alt="end">
+                        </div>
+                    </section>
+                    <section>
+                        <h5>place-self</h5>
+                        <aside class="notes">
+                            place-self sets both the 
+                            align-self and justify-self 
+                            properties in a single declaration.
+                        </aside>
+                    </section>
+                    <section>
+                        Examples
+                        <pre class="xml">
+                            <code class="hljs css">
+.item-a {
+    place-self: center stretch;
+}
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                                <img src="img/place-self-center-stretch.svg" width="400px" alt="end">
+                        </div>
+                    </section>
+                </section>
+                <section>
+                        <section>
+                            Useful links
+                        </section>
+                        <section>
+                            <div data-markdown>
+                                REALLY cool [game](https://cssgridgarden.com/) to learn grid layout
+                            </div>
+                            <iframe src="https://cssgridgarden.com/" frameborder="0"></iframe>
+                        </section>
+                </section>
+                <section>
+                    <section>
+                        <h5>
+                            Float
+                        </h5>
+                        <aside class="notes">
+                            Float is a CSS position property
+                        </aside>
+                    </section>
+                    <section>
+                        Using floats
+                        <pre class="xml">
+                            <code class="hljs css">
+#sidebar {
+    float: right;			
+}
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                            <img src="img/web-layout.png" width="400px" alt="end">
+                        </div>
+                        <aside class="notes">
+                                common values is right, left and inherit
+                            </aside>
+                    </section>
+                    <section>
+                        Affecting parrent <br>
+                        <div class="pic-back">
+                            <img src="img/collapse.png" width="400px" alt="end">
+                        </div>
+                        <aside class="notes">
+                                If this parent element contained nothing but 
+                                floated elements, the height of it would literally 
+                                collapse to nothing
+                        </aside>
+                    </section>
+                    <section>
+                        Clear
+                        <aside class="notes">
+                            An element that has the 
+                            clear property set on it will 
+                            not move up adjacent to the float 
+                            like the float desires, but will move 
+                            itself down past the float
+                        </aside>
+                    </section>
+                    <section>
+                        <div class="pic-back">
+                            <img src="img/unclearedfooter.png" width="400px" alt="end">
+                        </div>
+                        <pre class="xml">
+                            <code class="hljs css">
+#footer {
+    clear: both;			
+}
+                            </code>
+                        </pre>
+                        <div class="pic-back">
+                            <img src="img/clearedfooter.png" width="400px" alt="end">
+                        </div>
+                    </section>
+                    <section>
+                        <div class="pic-back">
+                            <img src="img/directionalclearing.png" width="400px" alt="end">
+                        </div>
+                        <aside class="notes">
+                            Left and right values used
+                            to only clear the float from one direction respectively.
+                            Both clears floats coming from either direction.
+                            also has inherit value.
+                        </aside>
+                    </section>
+                </section>
+            </div>
+        </div>
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+        <script>
+            Reveal.initialize({
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/zoom-js/zoom.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+        </script>
+    </body>
+</html>

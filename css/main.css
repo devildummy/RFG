@@ -1,0 +1,22 @@
+.main-word{
+    color: rgb(139, 63, 63);
+}
+.describe-word{
+    color: rgb(73, 134, 175);
+}
+.hamlet{
+    float: right;
+}
+iframe{
+    width: 100%;
+    height: 400px;
+    background: white;
+}
+.pic-back{
+    background: white;
+    display: inline-block;
+}
+section{
+    display: flex;
+    max-height: 1000px;
+}
